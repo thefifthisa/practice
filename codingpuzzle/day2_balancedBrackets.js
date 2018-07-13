@@ -1,6 +1,6 @@
 // https://twitter.com/ASpittel/status/1015211258897977345
 
-function balanceBrackets(str) {
+function balancedBrackets(str) {
     if (str.length % 2 == 0) {
         let stack = [];
         for (let i = 0; i < str.length; i++) {
@@ -17,6 +17,6 @@ function balanceBrackets(str) {
     return 'NO';
 }
 
-console.log(balanceBrackets('{[()]}')); // YES
-console.log(balanceBrackets('{[(])}')); // NO
-console.log(balanceBrackets('{{[[(())]]}}')); // YES
+console.log(balancedBrackets('{[()]}')); // YES
+console.log(balancedBrackets('{[(])}')); // NO
+console.log(balancedBrackets('{{[[(())]]}}')); // YES
