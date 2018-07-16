@@ -8,7 +8,7 @@ def passphrases_noDuplicates(list):
 def passphrases_noAnagrams(list):
     count = 0
     for pp in list:
-        if len(set([''.join(sorted(str)) for str in pp.split()])) == len(pp.split()): # sort each string in the list first to undo anagrams
+        if len(set([''.join(sorted(str)) for str in pp.split()])) == len(pp.split()): # sort each string in the passphrase first to undo anagrams
             count += 1
     return count
 
