@@ -1,3 +1,5 @@
+// https://twitter.com/ASpittel/status/1019927113384722432
+
 function firstNonRepeatingLetter(s) {
 	const chars = s.split('');
 	const lc = chars.map(c => c.toLowerCase());
